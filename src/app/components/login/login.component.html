@@ -1,0 +1,31 @@
+<div class="login-container">
+    <!-- Logotipo -->
+    <div class="text-main">
+        <img src="../../assets/img/Logo.jpg">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Quos repellendus provident,
+            adipisci ad consectetur maxime<br> eaque iure perferendis soluta aliquam
+            nisi velit reprehenderit<br> ducimus debitis excepturi nam aliquid magni ratione?</p>
+    </div>
+    <!-- Login -->
+    <form>
+        <div class="line-1">
+            <img src="../../assets/img/Logo.jpg">
+        </div>
+        <div>
+            <h1>{{ texto }}</h1>
+        </div>
+        <div class="line-2">
+            <div class="input">
+                <img src="../../assets/img/us.png">
+                <input [(ngModel)]="usuario.username" name="username" type="text" placeholder="Usuario">
+            </div>
+            <div class="input">
+                <img src="../../assets/img/key.png">
+                <input [(ngModel)]="usuario.password" name="password" type="password" placeholder="Contraseña">
+            </div>
+        </div>
+        <div class="line-3">
+          <button (click)="onUsuarioLogeado(usuario)" type="submit">{{ texto }}</button>
+        </div>
+    </form>
+</div>
