@@ -2,64 +2,56 @@
   margin: 0px;
   padding: 0px;
 }
-
+/* FONDO */
 .login-container{
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: cornflowerblue; */
-    background: url('../../../assets/img/fondo.jpg') repeat;
+    background: rgba(219,0,0,0.85);
+    background: -moz-linear-gradient(-45deg, rgba(219,0,0,0.85) 0%, rgba(0,0,255,0.85) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(219,0,0,0.85)), color-stop(100%, rgba(0,0,255,0.85)));
+    background: -webkit-linear-gradient(-45deg, rgba(219,0,0,0.85) 0%, rgba(0,0,255,0.85) 100%);
+    background: -o-linear-gradient(-45deg, rgba(219,0,0,0.85) 0%, rgba(0,0,255,0.85) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(219,0,0,0.85) 0%, rgba(0,0,255,0.85) 100%);
+    background: linear-gradient(135deg, rgba(219,0,0,0.85) 0%, rgba(0,0,255,0.85) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0000', endColorstr='#0000ff', GradientType=1 );/* background-color: rgba(0, 0, 255, .6); */
+    /* background: url('../../../assets/img/fondo.jpg') repeat; */
 }
-
-.login-container .text-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  flex-grow: 1;
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 0px 30px;
-  padding: 30px 0px;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
-  display: none;
-}
-
-.login-container .text-main img{
-  width: 200px;
-  height: 200px;
-  border-radius: 500px;
-}
-
-.login-container .text-main p{
-  color: white;
-  font-size: 18px;
-  margin: 5px 20px;
-}
-
+/* FORMULARIO LOGIN */
 .login-container form{
-    width: 30%;
-    height: 75%;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0,0,0,0.9) 0px 0px 20px;
+}
+
+.login-container form .form{
     display: flex;
     align-items: center;
-    background-color: rgba(0,0,0,0.7);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: rgba(0,0,0,0.9) 0px 0px 20px;
-    /* border: black solid 1px; */
-    flex-flow: column;
+    flex-flow: row;
     margin-right: 2rem;
 }
-
+/* IMAGEN DE CON LOGO DE LA EMPRESA */
 .line-1 img{
     width: 150px;
     height: 150px;
     border-radius: 500px;
     box-shadow: rgba(0,0,0,0.9) 0px 0px 20px;
+    margin: 0px 30px;
 }
-
+.container-button{
+  display: flex;
+  flex-direction: column;
+}
+/* CONTENEDOR DE LOS INPUTS Y DE LOS ICONOS DE USUARIO Y PASSWORD */
 .line-2 .input{
     border: 2px solid black;
     display: flex;
@@ -72,19 +64,17 @@
     box-shadow: rgba(0,0,0,0.9) 0px 0px 10px;
     margin: 20px 0px;
 }
-
+/* CONTENEDOR DEL BOTON INICIO DE SESION */
 .line-3{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.input img{
-    width: 40px;
-    height: 40px;
-    padding: 2px 0px;
+/* CONTENEDOR DE LOS ICONOS DE FONT-AWESOME */
+.input .img{
+    padding: 2px 1px 2px 10px;
 }
-
+/* INPUTS DE USERNAME Y PASSWORD */
 input{
     font-size: 18px;
     padding: 8px;
@@ -92,12 +82,12 @@ input{
     border: none;
     outline: none;
 }
-
+/* TITULO DE LA PAGINA */
 h1{
     color: white;
     margin: 10px 0px;
 }
-
+/* ESTILOS DEL BOTON */
 button{
     font-size: 20px;
     background: none;
@@ -108,7 +98,7 @@ button{
     padding: 10px;
     transition: all 300ms;
 }
-
+/* ESTILOS AL ESTAR SOBRE EL BOTON */
 button:hover{
     background-color: white;
     cursor: pointer;
