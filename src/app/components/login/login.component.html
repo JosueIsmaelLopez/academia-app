@@ -1,30 +1,34 @@
 <div class="login-container">
     <!-- Login -->
     <form>
-      <h1>{{ texto }}</h1>
+      <h1>Excellence Global English</h1>
       <div class="form">
         <div class="line-1">
             <img src="../../assets/img/Logo.jpg">
         </div>
-        <div class="container-button">
-            <div class="line-2">
-                <div class="input">
-                    <div class="img">
-                      <i class="far fa-user"></i>
-                    </div>
-                    <input [(ngModel)]="usuario.username" name="username" type="text" placeholder="Usuario">
-                </div>
-                <div class="input">
-                    <div class="img">
-                      <i class="fas fa-key"></i>
-                    </div>
-                    <input [(ngModel)]="usuario.password" name="password" type="password" placeholder="Contraseña">
-                </div>
-            </div>
+          <div class="line-2">
+              <div class="input">
+                  <div class="img">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <input [(ngModel)]="usuario.username" name="username" type="text" placeholder="Usuario">
+              </div>
+              <div class="input">
+                  <div class="img">
+                    <i class="fas fa-key"></i>
+                  </div>
+                  <input [(ngModel)]="usuario.password" name="password" type="password" placeholder="Contraseña">
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <!-- BOTON INICIO -->
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+              <button class="btn btn-block" (click)="onUsuarioLogeado(usuario)" type="submit">Iniciar Sesion</button>
+          </div>
         </div>
       </div>
-      <div class="line-3">
-        <button (click)="onUsuarioLogeado(usuario)" type="submit">{{ texto }}</button>
-      </div>
+      <!-- BOTON FIN -->
     </form>
 </div>
