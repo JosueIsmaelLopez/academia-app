@@ -32,32 +32,18 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 0px 75px 0px 75px;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px;
-}
-
-.login-container form .form {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row;
-  /* background-color: blueviolet; */
 }
 
 /* IMAGEN DE CON LOGO DE LA EMPRESA */
 .line-1 img {
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   border-radius: 500px;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px;
-  margin: 0px 30px;
-}
-
-.container-button {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  margin: 0px 20px 60px 0px;
+  /* padding-left: 30px; */
 }
 
 /* CONTENEDOR DE LOS INPUTS Y DE LOS ICONOS DE USUARIO Y PASSWORD */
@@ -78,7 +64,7 @@
   justify-content: space-between;
   background-color: white;
   border: rgba(0, 0, 0, 0.4) solid 2px;
-  border-radius: 10px;
+  border-radius: 0px 20px 0px 20px;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
   margin: 20px 0px;
@@ -95,14 +81,14 @@
 /* CONTENEDOR DE LOS ICONOS DE FONT-AWESOME */
 .input .img {
   margin: auto;
-  /* padding: 2px 1px 2px 10px; */
+  padding: 5px;
 }
 
 /* INPUTS DE USERNAME Y PASSWORD */
 input {
   font-size: 18px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 0px 20px 0px 0px;
   border: none;
   outline: none;
   flex-grow: .8;
@@ -121,7 +107,8 @@ button {
   color: white;
   outline: none;
   border: white 2px solid;
-  border-radius: 5px;
+  /* border-radius: 0px 15px 0px 15px; */
+  border-radius: 25px;
   padding: 10px;
   transition: all 300ms;
 }

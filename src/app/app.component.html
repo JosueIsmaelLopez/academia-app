@@ -1,8 +1,9 @@
-<app-login (usuarioLogeado)="setLogeado($event)" *ngIf="!getLoginStatus()" ></app-login>
+<app-login (usuarioLogeado)="setLogeado($event)" *ngIf="getLoginStatus()" ></app-login>
 
-<div *ngIf="getLoginStatus()">
-  <app-header></app-header>
-  <div class="container-router">
+<div *ngIf="!getLoginStatus()">
+  <!-- <app-header></app-header> -->
+  <!--   <div class="container-router"> -->
+  <div>
       <router-outlet></router-outlet>
   </div>
 </div>

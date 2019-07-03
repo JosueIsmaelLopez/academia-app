@@ -8,10 +8,12 @@ import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReservaComponent } from './components/reserva/reserva.component';
 import { CardComponent } from './components/card/card.component';
+import { MainComponent } from './components/main/main.component';
+import { PanelComponent } from './components/panel/panel.component';
 
 //Definiendo un Objeto de tipo Routes con todas las rutas que manejara la aplicacion
 const routes: Routes = [
-  {path:'', component: ReservaComponent, pathMatch: 'full'},
+  {path:'', component: MainComponent, pathMatch: 'full'},
   // {path:'reserva', component: ReservaComponent}
 ];
 
@@ -21,7 +23,9 @@ const routes: Routes = [
     LoginComponent,
     HeaderComponent,
     ReservaComponent,
-    CardComponent
+    CardComponent,
+    MainComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

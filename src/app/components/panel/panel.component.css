@@ -1,0 +1,21 @@
+.panel{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+  flex-direction: column;
+  background-color: blue;
+}
+
+.prueba{
+  width: 100%;
+  height: 10vh;
+  /* background-color: blue; */
+  border: solid 2px white;
+  margin-top: 10px;
+}
+
+img{
+  width: 100%;
+}
