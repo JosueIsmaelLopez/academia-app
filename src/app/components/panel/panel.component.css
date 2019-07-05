@@ -5,7 +5,9 @@
   /* justify-content: start; */
   align-items: center;
   flex-direction: column;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, .8);
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 1);
+  margin: 0px 2px 0px 0px;
 }
 
 .prueba{
@@ -18,4 +20,8 @@
 
 img{
   width: 100%;
+}
+
+p{
+  font-size: 1.1rem;
 }
