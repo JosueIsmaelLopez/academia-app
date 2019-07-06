@@ -18,6 +18,48 @@
     <div class="row justify-content-center bg-success" style="height: 90vh;">
       <!-- Tabla a mostrar -->
       <div class="col-lg-12">
+        <div class="card border-primary mb-3 my-3">
+          <div class="card-header">Record de Produccion</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Listado de Matriculas</h5>
+            <!-- Tabla -->
+            <table class="table table-bordered table-striped" style="font-size: .8rem;">
+              <thead>
+                <tr>
+                  <th>Fecha de Ingreso</th>
+                  <th>No.</th>
+                  <th>Teléfono</th>
+                  <th>Titular</th>
+                  <th>No. Mat</th>
+                  <th>Inscripción</th>
+                  <th>Plan</th>
+                  <th>Valor por mes</th>
+                  <th>Valor total</th>
+                  <th>Ejecutivo</th>
+                  <th>Estrategia</th>
+                  <th>Forma de pago</th>
+                  <th>Obervaciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let matricula of record">
+                  <td>{{ matricula.fechaIng }}</td>
+                  <td>{{ matricula.no }}</td>
+                  <td>{{ matricula.telefono }}</td>
+                  <td>{{ matricula.NoMat }}</td>
+                  <td>{{ matricula.inscripcion }}</td>
+                  <td>{{ matricula.plan }}</td>
+                  <td>{{ matricula.valorMes }}</td>
+                  <td>{{ matricula.valorTotal }}</td>
+                  <td>{{ matricula.ejecutivo }}</td>
+                  <td>{{ matricula.estrategia }}</td>
+                  <td>{{ matricula.formaPago }}</td>
+                  <td>{{ matricula.observacion }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>

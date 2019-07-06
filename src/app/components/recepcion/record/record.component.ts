@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RecordProduccion } from './RecordProduccion';
 
 @Component({
   selector: 'app-record',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecordComponent implements OnInit {
 
+  record: RecordProduccion[];
   constructor() { }
 
   ngOnInit() {
