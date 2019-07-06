@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ReservaComponent } from './components/recepcion/reserva/reserva.component';
-import { CardComponent } from './components/card/card.component';
 import { MainComponent } from './components/main/main.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { RecordComponent } from './components/recepcion/record/record.component';
@@ -24,7 +23,6 @@ const routes: Routes = [
     LoginComponent,
     HeaderComponent,
     ReservaComponent,
-    CardComponent,
     MainComponent,
     PanelComponent,
     RecordComponent
