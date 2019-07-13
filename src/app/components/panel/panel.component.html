@@ -1,63 +1,62 @@
-<nav class="panel container d-flex flex-column justify-content-between">
-  <div>
+<nav class="panel container">
+  <ul class="nav flex-column">
+    <li class="nav-item my-1">
+      <img class="nav-link active" href="#" src="../../../assets/img/logo-2.png">
+    </li>
+  </ul>
+  <div class="recepcion" *ngIf="true">
     <ul class="nav flex-column">
-      <li class="nav-item my-1">
-        <img class="nav-link active" href="#" src="../../../assets/img/logo-2.png">
+      <div class="container pl-0 pr-0">
+          <hr style="background-color: white; margin: 15px -15px;">
+        <div class="row justify-content-center align-items-center">
+          <span style="font-size: .8rem" class="text-light">Recepcion</span>
+        </div>
+        <hr style="background-color: white; margin: 15px -15px;">
+      </div>
+      <!-- Lista -->
+      <li class="nav-item">
+        <div class="container pl-0 pr-0">
+          <div class="row justify-content-center" routerLinkActive="active">
+            <a class="nav-link" href="#" routerLink="/reserva">
+              <p class="text-light" style="font-size: .8rem">Reserva de Tutorias</p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <!--  -->
+      <li class="nav-item">
+        <div class="container">
+          <div class="row justify-content-center" routerLinkActive="active">
+            <a class="nav-link" href="#" routerLink="/registro">
+              <p class="text-light" style="font-size: .8rem">Registro de Alumno</p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <!--  -->
+      <li class="nav-item">
+        <div class="container">
+          <div class="row justify-content-center" routerLinkActive="active">
+            <a class="nav-link" href="#" routerLink="/historial">
+              <p class="text-light" style="font-size: .8rem">Green Cards</p>
+            </a>
+          </div>
+        </div>
+      </li>
+      <!-- -->
+      <li class="nav-item">
+        <div class="container">
+          <div class="row justify-content-center" routerLinkActive="active">
+            <a class="nav-link" href="#" routerLink="/record">
+              <p class="text-light" style="font-size: .8rem">Record de Produccion</p>
+            </a>
+          </div>
+        </div>
       </li>
     </ul>
-    <div class="recepcion" *ngIf="true">
-      <ul class="nav flex-column">
-        <div class="container pl-0 pr-0">
-          <hr style="background-color: white; margin: 15px -15px;">
-          <div class="row justify-content-center align-items-center">
-            <span style="font-size: .8rem" class="text-light">Recepcion</span>
-          </div>
-          <hr style="background-color: white; margin: 15px -15px;">
-        </div>
-        <!-- Lista -->
-        <li class="nav-item">
-          <div class="container pl-0 pr-0">
-            <div class="row justify-content-center" routerLinkActive="active">
-              <a class="nav-link" href="#" routerLink="/reserva">
-                <p class="text-light" style="font-size: .8rem">Reserva de Tutorias</p>
-              </a>
-            </div>
-          </div>
-        </li>
-        <!--  -->
-        <li class="nav-item">
-          <div class="container">
-            <div class="row justify-content-center" routerLinkActive="active">
-              <a class="nav-link" href="#" routerLink="/registro">
-                <p class="text-light" style="font-size: .8rem">Registro de Alumno</p>
-              </a>
-            </div>
-          </div>
-        </li>
-        <!--  -->
-        <li class="nav-item">
-          <div class="container">
-            <div class="row justify-content-center" routerLinkActive="active">
-              <a class="nav-link" href="#" routerLink="/historial">
-                <p class="text-light" style="font-size: .8rem">Green Cards</p>
-              </a>
-            </div>
-          </div>
-        </li>
-        <!-- -->
-        <li class="nav-item">
-          <div class="container">
-            <div class="row justify-content-center" routerLinkActive="active">
-              <a class="nav-link" href="#" routerLink="/record">
-                <p class="text-light" style="font-size: .8rem">Record de Produccion</p>
-              </a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- Seccion Administrador -->
-    <div class="administracion" *ngIf="false">
+  </div>
+  <!-- Seccion Administrador -->
+  <div class="administracion" *ngIf="false">
       <ul class="nav flex-column">
         <div class="container pl-0 pr-0">
           <hr style="background-color: white; margin: 15px -15px;">
@@ -108,11 +107,4 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div class="img" style="position: relative; padding-top: 1vh;">
-    <a href="#" style="text-decoration: none; font-size: 0.99rem; color: white ">
-      Salir
-      <i class="fas fa-sign-out-alt"></i>
-    </a>
-  </div>
 </nav>

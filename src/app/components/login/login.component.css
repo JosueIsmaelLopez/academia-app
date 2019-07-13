@@ -25,12 +25,12 @@
 /* FORMULARIO LOGIN */
 .login-container form {
   width: 50%;
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 0px 75px 0px 75px;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px;
@@ -38,11 +38,11 @@
 
 /* IMAGEN DE CON LOGO DE LA EMPRESA */
 .line-1 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 500px;
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 20px;
-  margin: 0px 20px 60px 0px;
+  margin: 0px 20px 40px 60px;
   /* padding-left: 30px; */
 }
 
@@ -57,13 +57,13 @@
 }
 
 .line-2 .input {
-  border: 2px solid black;
+  border: 1px solid black;
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  border: rgba(0, 0, 0, 0.4) solid 2px;
+  border: black solid 1px;
   border-radius: 0px 20px 0px 20px;
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 10px;
@@ -97,19 +97,19 @@ input {
 /* TITULO DE LA PAGINA */
 h1 {
   color: white;
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 /* ESTILOS DEL BOTON */
 button {
-  font-size: 20px;
+  font-size: 18px;
   background: none;
   color: white;
   outline: none;
   border: white 2px solid;
   /* border-radius: 0px 15px 0px 15px; */
   border-radius: 25px;
-  padding: 10px;
+  padding: 5px;
   transition: all 300ms;
 }
 
