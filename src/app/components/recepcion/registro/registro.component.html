@@ -1,11 +1,13 @@
-<div class="container my-1">
+<div class="container d-flex justify-content-center aling-items-center flex-column" style="height: 100vh;">
   <!-- ----------------------------------------------------------------------- -->
   <!-- -----------------------------Titular------------------------------- -->
   <!-- ----------------------------------------------------------------------- -->
   <div class="row">
     <div class="col-lg-12">
       <div class="card">
-        <div class="card-header text-center p-1">Titular</div>
+        <div class="card-header text-center p-0">
+          Titular
+        </div>
         <div class="card-body p-2">
           <div class="container pl-0 pr-0">
             <div class="row">
@@ -40,10 +42,10 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-md-3 pl-0 pr-0">
-                      <input type="text" placeholder="Telefono" required>
+                      <input class="mr-1" type="text" placeholder="Telefono" required>
                     </div>
                     <div class="col-md-3 pl-0 pr-0">
-                      <input type="text" placeholder="Celular" required>
+                      <input class="ml-1" type="text" placeholder="Celular" required>
                     </div>
                     <div class="col-sm-6">
                       <div class="d-flex flex-row">
@@ -89,7 +91,7 @@
               <input type="text" placeholder="Ingreso Mensual" required>
             </div>
             <div class="col-sm-6">
-              <input type="text" placeholder="Email" required>
+              <input type="email" placeholder="Email" required>
             </div>
           </div>
         </div>
@@ -186,7 +188,7 @@
               <input type="text" placeholder="Nombres y Apellidos" required>
             </div>
             <div class="col-lg-3">
-                <input type="text" placeholder="Direccion" required>
+                <input type="text" placeholder="Direccion">
             </div>
             <div class="col-lg-3">
                 <input type="text" placeholder="Telefono" required>
@@ -200,12 +202,14 @@
                 <input type="text" placeholder="Fecha de Nacimiento" required>
             </div>
             <div class="col-lg-4">
-                <input type="text" placeholder="Email" required>
+                <input type="email" placeholder="Email" required>
             </div>
           </div>
           <div class="row my-1">
             <div class="col-lg-12">
-                <button class="btn btn-primary btn-block" type="submit">Guardar</button>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
             </div>
           </div>
         </div>
