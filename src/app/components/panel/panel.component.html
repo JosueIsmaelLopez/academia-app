@@ -1,16 +1,18 @@
 <nav class="panel container">
-  <div class="recepcion">
+  <ul class="nav flex-column">
+    <li class="nav-item my-1">
+      <img class="nav-link active" href="#" src="../../../assets/img/logo-2.png">
+    </li>
+  </ul>
+  <div class="recepcion" *ngIf="true">
     <ul class="nav flex-column">
-      <li class="nav-item my-2 mb-2">
-        <img class="nav-link active" href="#" src="../../../assets/img/logo-2.png">
-      </li>
-      <hr class="ml-1 mr-1" style="background-color: white;">
-      <div class="container">
+      <div class="container pl-0 pr-0">
+          <hr style="background-color: white; margin: 15px -15px;">
         <div class="row justify-content-center align-items-center">
           <span style="font-size: .8rem" class="text-light">Recepcion</span>
         </div>
+        <hr style="background-color: white; margin: 15px -15px;">
       </div>
-      <hr class="ml-1 mr-1" style="background-color: white;">
       <!-- Lista -->
       <li class="nav-item">
         <div class="container pl-0 pr-0">
@@ -53,4 +55,56 @@
       </li>
     </ul>
   </div>
+  <!-- Seccion Administrador -->
+  <div class="administracion" *ngIf="true">
+      <ul class="nav flex-column">
+        <div class="container pl-0 pr-0">
+          <hr style="background-color: white; margin: 15px -15px;">
+          <div class="row justify-content-center align-items-center">
+            <span style="font-size: .8rem" class="text-light">Administracion</span>
+          </div>
+          <hr style="background-color: white; margin: 15px -15px;">
+        </div>
+        <!-- Lista -->
+        <li class="nav-item">
+          <div class="container pl-0 pr-0">
+            <div class="row justify-content-center" routerLinkActive="active">
+              <a class="nav-link" href="#" routerLink="/estado-cuenta">
+                <p class="text-light" style="font-size: .8rem">Estado de Cuenta</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <!--  -->
+        <li class="nav-item">
+          <div class="container">
+            <div class="row justify-content-center" routerLinkActive="active">
+              <a class="nav-link" href="#" routerLink="/clientes">
+                <p class="text-light" style="font-size: .8rem">Lista de Clientes</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <!--  -->
+        <li class="nav-item">
+          <div class="container">
+            <div class="row justify-content-center" routerLinkActive="active">
+              <a class="nav-link" href="#" routerLink="/pagos-pendientes">
+                <p class="text-light" style="font-size: .8rem">Pagos Pendientes</p>
+              </a>
+            </div>
+          </div>
+        </li>
+        <!-- -->
+        <li class="nav-item">
+          <div class="container">
+            <div class="row justify-content-center" routerLinkActive="active">
+              <a class="nav-link" href="#" routerLink="/pagos-atrasados">
+                <p class="text-light" style="font-size: .8rem">Pagos Atrasados</p>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 </nav>
