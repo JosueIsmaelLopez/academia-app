@@ -1,36 +1,82 @@
 <div class="record-component">
-  <div class="container">
-    <div class="row bg-light" style="height: 25vh;">
+  <div class="container justify-content-start">
+    <div class="row mb-5" style="height: 20vh;">
       <div class="col-lg-12">
         <!-- Barra de herramientas -->
-        <div class="d-flex flex-column justify-content-between align-items-start">
-          <ul class="nav nav-tabs" id="myTab" role="tablist" style="height: 5vh;">
-            <li class="nav-item">
-              <a class="nav-link active" id="mes-tab" data-toggle="tab" href="#mes" role="tab" aria-controls="mes"
-                aria-selected="true" style="height: 5vh;">Mes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false" style="height: 5vh;">Plan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                aria-selected="false" style="height: 5vh;">Asesor</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="mes" role="tabpanel" aria-labelledby="mes-tab">
-              <img src="../../../../assets/img/Logo.jpg" style="width: 100px; height: 100px;">
+        <div class="bg-success my-1" style="width: 100%;">
+          <div class="card">
+            <div class="card-header d-flex flex-row text-center py-1 justify-content-between align-items-center">
+              <p>Filtrar Informacion</p> 
+              <div class="btn btn-primary">Filtrar</div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body d-flex flex-row justify-content-around">
+                        <!-- Filtrar por Asesor -->
+                        <div class="card mr-2" style="width: 25%;">
+                          <div class="card-header text-center py-1 bg-danger text-white">
+                            Ejecutivo
+                          </div>
+                          <div class="card-body justify-content-center p-0">
+                            <select style="width: 100%; border-radius: 0px;" class="btn btn-light" [(ngModel)]="selectedLevel"
+                              (change)="selected()">
+                              <option *ngFor="let item of data" [ngValue]="item">{{item.name}}</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <!-- Filtrar por plan de Inversion -->
+                        <div class="card mr-2" style="width: 25%;">
+                          <div class="card-header text-center py-1 bg-danger text-white">
+                            Plan
+                          </div>
+                          <div class="card-body justify-content-center p-0">
+                            <select style="width: 100%; border-radius: 0px;" class="btn btn-light" [(ngModel)]="selectedPlan"
+                              (change)="selected()">
+                              <option *ngFor="let item of plan" [ngValue]="item">{{item.name}}</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <!-- Filtrar por Estrategia -->
+                        <div class="card mr-2" style="width: 25%;">
+                            <div class="card-header text-center py-1 bg-danger text-white">
+                              Estrategia
+                            </div>
+                            <div class="card-body justify-content-center p-0">
+                              <select style="width: 100%; border-radius: 0px;" class="btn btn-light" [(ngModel)]="selectedEstrategia"
+                                (change)="selected()">
+                                <option *ngFor="let item of estrategia" [ngValue]="item">{{item.name}}</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!--  -->
+                          <!-- Filtrar por Forma de Pago -->
+                        <div class="card mr-2" style="width: 25%;">
+                            <div class="card-header text-center py-1 bg-danger text-white">
+                              Forma de Pago
+                            </div>
+                            <div class="card-body justify-content-center p-0">
+                              <select style="width: 100%; border-radius: 0px;" class="btn btn-light" [(ngModel)]="selectedForma"
+                                (change)="selected()">
+                                <option *ngFor="let item of forma" [ngValue]="item">{{item.name}}</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!--  -->
+                      </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row justify-content-center" style="height: 75vh;">
+  <!-- ------------------------------------------------------------------------------- -->
+  <div class="container my-2">
+    <div class="row justify-content-center" style="height: 70vh;">
       <!-- Tabla a mostrar -->
       <div class="col-lg-12">
         <div class="card border-primary mb-3 my-3">

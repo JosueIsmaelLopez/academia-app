@@ -13,9 +13,9 @@ import { RecordComponent } from './components/recepcion/record/record.component'
 
 //Definiendo un Objeto de tipo Routes con todas las rutas que manejara la aplicacion
 const routes: Routes = [
-  // {path:'', component: RecordComponent, pathMatch: 'full'},
-  {path:'reserva', component: ReservaComponent},
-  {path:'record', component: RecordComponent}
+  {path:'', component: RecordComponent, pathMatch: 'full'},
+  //{path:'reserva', component: ReservaComponent},
+  //{path:'record', component: RecordComponent}
 ];
 
 @NgModule({
