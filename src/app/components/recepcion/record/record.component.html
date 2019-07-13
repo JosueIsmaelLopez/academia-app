@@ -85,21 +85,21 @@
             <!-- <h5 class="card-title">Listado de Matriculas</h5> -->
             <!-- Tabla -->
             <table class="table table-bordered table-striped" style="font-size: .8rem;">
-              <thead>
+              <thead class="bg-danger" style="height: 5vh;">
                 <tr>
-                  <th>Fecha de Ingreso</th>
+                  <th>Fecha/Ing.</th>
                   <th>No.</th>
                   <th>Teléfono</th>
                   <th>Titular</th>
-                  <th>No. Mat</th>
+                  <th>No.Mat</th>
                   <th>Inscripción</th>
                   <th>Plan</th>
-                  <th>Valor por mes</th>
-                  <th>Valor total</th>
+                  <th>Valor/mes</th>
+                  <th>Valor/total</th>
                   <th>Ejecutivo</th>
                   <th>Estrategia</th>
-                  <th>Forma de pago</th>
-                  <th>Obervaciones</th>
+                  <th>Forma pago</th>
+                  <!-- <th>Obervaciones</th> -->
                 </tr>
               </thead>
               <tbody>
@@ -107,6 +107,7 @@
                   <td>{{ matricula.fechaIng }}</td>
                   <td>{{ matricula.no }}</td>
                   <td>{{ matricula.telefono }}</td>
+                  <td>{{ matricula.titular }}</td>
                   <td>{{ matricula.NoMat }}</td>
                   <td>{{ matricula.inscripcion }}</td>
                   <td>{{ matricula.plan }}</td>
@@ -115,7 +116,7 @@
                   <td>{{ matricula.ejecutivo }}</td>
                   <td>{{ matricula.estrategia }}</td>
                   <td>{{ matricula.formaPago }}</td>
-                  <td>{{ matricula.observacion }}</td>
+                  <!-- <td>{{ matricula.observacion }}</td> -->
                 </tr>
               </tbody>
             </table>

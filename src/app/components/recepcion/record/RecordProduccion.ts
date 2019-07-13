@@ -1,8 +1,10 @@
 export class RecordProduccion {
+  fechaIng: String;
   no: Number;
   telefono: string;
-  NoMat: Number;
-  inscripcion: string;
+  titular: String;
+  NoMat: String;
+  inscripcion: Number;
   plan: Number;
   valorMes: Number;
   valorTotal: Number;
